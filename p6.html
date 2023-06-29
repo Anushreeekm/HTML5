@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5</title>
+    <style>
+        dialog{
+            background-color: paleturquoise;
+            color: blue;
+            margin: 20px;
+        }
+        button{
+            background-color: brown;
+            color:pink;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h3>DETAILS TAG</h3>
+        <p>This tag is used to specify the additional details on thw web page that the user can view or hide in demand.</p>
+    </center>
+    <hr>
+
+    <center>
+        <h3>This is SUMMARY TAG</h3>
+        <p>The <b>HTML SUMMARY</b> tag is used with <b>DETAILS</b> tag. It is used as a summary, caption or legend for the content of a details element</p>
+    </center>
+    <hr>
+
+    <details>
+        <summary>HTML</summary>
+        <h1>HTML</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem porro nostrum, veniam obcaecati corporis, neque amet odio maiores ea possimus eaque. Voluptatem, nihil possimus. Voluptate a molestias possimus veniam culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quae minima eaque, totam ex reiciendis itaque sapiente molestias magni at ipsa! Ducimus eligendi dicta similique praesentium dolore in accusamus molestias.
+        </p>
+    </details>
+
+    
+    <details>
+        <summary>CSS</summary>
+        <h1>CSS</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem porro nostrum, veniam obcaecati corporis, neque amet odio maiores ea possimus eaque. Voluptatem, nihil possimus. Voluptate a molestias possimus veniam culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quae minima eaque, totam ex reiciendis itaque sapiente molestias magni at ipsa! Ducimus eligendi dicta similique praesentium dolore in accusamus molestias.
+        </p>
+    </details>
+
+    
+    <details>
+        <summary>JS</summary>
+        <h1>JS</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem porro nostrum, veniam obcaecati corporis, neque amet odio maiores ea possimus eaque. Voluptatem, nihil possimus. Voluptate a molestias possimus veniam culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quae minima eaque, totam ex reiciendis itaque sapiente molestias magni at ipsa! Ducimus eligendi dicta similique praesentium dolore in accusamus molestias.
+        </p>
+    </details>
+    <hr>
+
+    <center>
+        <h3>TIME TAG..! </h3>
+            <p><b>HTML time</b> tag is used to define date and timee. It displays time value in a 24 hour clock or a precise date in a Gregorian calendar in HTML</p>
+    </center>
+    <hr>
+
+    <p>Lorem ipsum dolor sit amet 5:30 PM consectetur, adipisicing elit. Quis neque consequuntur veritatis suscipit rem. Nemo dolores dolorum expedita nesciunt eos rem quos, tenetur dicta delectus, amet voluptates quas omnis doloremque?</p>
+    <p>We open our office at <time>5:30</time> PM.</p>
+    <hr>
+
+    <center>
+        <h3>This is DIALOG TAG</h3>
+        <p><b>(This tag to create a new popup dialog on a web page. )</b></p>
+    </center>
+
+    <dialog id="dialogID">
+        <button type="button" id="closebutton">&times;</button>
+        <h1>FULLSTACK...! </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dignissimos, ea nobis, numquam repellat ducimus minus earum fugiat reiciendis optio deserunt ipsa odio? Placeat autem nisi quis necessitatibus nemo deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos recusandae nostrum rerum ducimus aperiam saepe natus magni corrupti amet repellendus est consectetur laboriosam quasi quisquam eum, quaerat incidunt rem et.</p>
+    </dialog>
+
+    <button type="button" id="openbutton">Open Dialog</button>
+    <script>
+        document.getElementById("openbutton").onclick = function(){
+            document.getElementById("dialogID").show();
+        };
+        document.getElementById("closebutton").onclick = function(){
+            document.getElementById("dialogID").close();
+        };
+    </script>
+</body>
+</html>
